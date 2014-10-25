@@ -16,7 +16,9 @@ echo "ANDROID_HOME=~/android-sdk-linux" >> /home/vagrant/.bashrc
 echo "PATH=\$PATH:~/android-sdk-linux/tools:~/android-sdk-linux/platform-tools" >> /home/vagrant/.bashrc
 
 npm install -g cordova
+npm install -g phonegap
 npm install -g ionic
+npm install -g gulp
 expect -c '
 set timeout -1   ;
 spawn /home/vagrant/android-sdk-linux/tools/android update sdk -u --all --filter platform-tool,android-19,build-tools-19.1.0
