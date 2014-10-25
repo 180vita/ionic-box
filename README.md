@@ -46,3 +46,11 @@ $ vagrant up
 ```
 
 If you try this method and it works or you encounter issues, please comment on issue #7.
+
+### Differences from original repository
+
+This repository is a fork from https://github.com/driftyco/ionic-box. The main differences are:
+
+* PhoneGap CLI is installed for phonegap development and builds.
+* Gulp npm package is globally installed for task execution.
+* A folder with the name Apps is expected to be created in the root folder. The applications should be living within this folder and it is synced in the /Apps folder inside the Vagrant box.
