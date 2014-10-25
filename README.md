@@ -13,6 +13,7 @@ To install, download and install [Vagrant](https://www.vagrantup.com/downloads.h
 Once Vagrant and VirtualBox are installed, you can download the latest release of this GitHub repo, and unzip it. `cd` into the unzipped folder and run:
 
 ```bash
+$ mkdir Apps
 $ vagrant up
 $ vagrant ssh
 ```
@@ -20,6 +21,8 @@ $ vagrant ssh
 The username for vagrant is `vagrant` and the password is `vagrant`. 
 
 This will download and install the image, and then go through the dependencies and install them one by one. `vagrant ssh` will connect you to the image and give you a bash prompt. Once everything completes, you'll have a working box to build your apps on Android.
+
+You can then go into the /Apps directory within the box (or the Apps folder you just created in the root folder of the Ionic Box installation) and start a new Ionic app or checkout one from an existing repository.
 
 ### Connected Android Devices
 
@@ -35,17 +38,6 @@ If that does not work, or shows `????? permissions`, then run:
 sudo /home/vagrant/android-sdk-linux/platform-tools/adb kill-server
 sudo /home/vagrant/android-sdk-linux/platform-tools/adb start-server
 ```
-
-### Pre-built image
-
-We are testing a pre-built Vagrant cloud image which should be faster than using the Vagrantfile method above. To try it, create a folder where you want to init your dev environment (a great place for this would be in the project folder of your app). Then run:
-
-```bash
-$ vagrant init drifty/ionic-android
-$ vagrant up
-```
-
-If you try this method and it works or you encounter issues, please comment on issue #7.
 
 ### Differences from original repository
 
