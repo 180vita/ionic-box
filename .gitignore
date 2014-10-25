@@ -1,0 +1,5 @@
+# Ignore Apps folder.
+Apps/
+
+# Ignore .vagrant folder.
+.vagrant/
