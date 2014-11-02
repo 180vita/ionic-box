@@ -45,4 +45,5 @@ This repository is a fork from https://github.com/driftyco/ionic-box. The main d
 
 * PhoneGap CLI is installed for phonegap development and builds.
 * Gulp npm package is globally installed for task execution.
+* Bower npm package is globally installed for js dependency management.
 * A folder with the name Apps is expected to be created in the root folder. The applications should be living within this folder and it is synced in the /Apps folder inside the Vagrant box.
